@@ -3,6 +3,7 @@
 ## 已完成登录 角色 权限 
 
 ## Project setup
+## 安装扩展包 
 ```
 npm install
 ```
