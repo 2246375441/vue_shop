@@ -79,6 +79,7 @@ export default {
             // 把token添加到session中 sessionStorage会话结束 就关闭
             // ☆
             window.sessionStorage.setItem("token",res.data.token)
+            window.sessionStorage.setItem("username",res.data.username)
             //2.通过编程式导航跳转到后台主页，路由地址是/home
             this.$router.push('/home')
             
