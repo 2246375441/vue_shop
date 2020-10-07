@@ -1,4 +1,6 @@
 # vue_shop
+# 2020/10/7
+# 已完成登录 角色 权限 
 
 ## Project setup
 ```
