@@ -200,6 +200,7 @@ export default {
 
       // this.getRolesList()
       role.children = res.data
+
     },
     // 添加角色
     addRole(){
@@ -265,7 +266,7 @@ export default {
     // 删除角色
     async deleteRoleById(id){
       // console.log(id);
-      const IsConfirm = await this.$confirm('此操作将永久删除该角色, 是否继续?', '提示', {
+      const IsConfirm = this.$confirm('此操作将永久删除该角色, 是否继续?', '提示', {
         confirmButtonText: '确定',
         cancelButtonText: '取消',
         type: 'warning'
