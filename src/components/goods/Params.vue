@@ -227,7 +227,6 @@ export default {
         return this.$message.error('获取参数列表失败')
       }
 
-
       // 将  参数1 参数2 参数3 参数4  字符串数据转换为 数组
       // [0: "参数1"  1: "参数2" ]
       // 按空格 截取
@@ -250,7 +249,6 @@ export default {
       }else{
         this.onlyTableData = res.data
       }
-
     },
     // 页签 点击事件处理函数
     handleTabClick(){
@@ -293,7 +291,6 @@ export default {
       }
       this.editForm = res.data
       this.editDialogVisible = true
-
       // console.log(this.editForm);
     },
     // 监听修改对话框关闭
