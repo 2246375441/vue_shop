@@ -348,7 +348,7 @@ export default {
       if (res.meta.status !== 200) {
         return this.$message.error('删除失败')
       }
-        this.$message.success('删除失败')
+        this.$message.success('删除成功')
         
         // 刷新数据列表
         this.getUserList()
