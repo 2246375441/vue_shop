@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <!-- 路由占位符 2020/10/10  12:00 -->
+    <!-- 路由占位符 10/11 -->
     <router-view></router-view>
   </div>
 </template>
