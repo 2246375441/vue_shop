@@ -359,7 +359,7 @@ export default {
       const {data:res} = await this.$http.put(`goods/${this.goodsId}`,EditFormInfo)
       this.editDialogVisible = false
 
-      console.log(res);
+      // console.log(res);
       this.getGoodsList()
     },
     // 监听关闭

@@ -3,6 +3,7 @@ import App from './App.vue'
 import router from './router'
 // 导入elementUi
 import './plugins/element.js'
+import 'element-ui/lib/theme-chalk/index.css';
 // 导入全局样式表
 import './assets/css/global.css'
 // 导入字体图片
@@ -19,14 +20,23 @@ import 'quill/dist/quill.core.css' // import styles
 import 'quill/dist/quill.snow.css' // for snow theme
 import 'quill/dist/quill.bubble.css' // for bubble theme
 
+// 导入进度条 nprogress 插件
+import NProgress from 'nprogress'
+import 'nprogress/nprogress.css'
 
 // 配置axios请求路径
 axios.defaults.baseURL = 'http://127.0.0.1:8888/api/private/v1/'
+// 在request拦截器中 显示进度条 ---NProgress    NProgress.start()
 // 设置拦截器 在请求头上设置token 
 axios.interceptors.request.use(config =>{
-  // console.log(config);
+  NProgress.start()
   config.headers.Authorization = window.sessionStorage.getItem('token')
   // 最后必须return config
+  return config
+})
+// response拦截器 隐藏进度条  ---NProgress    NProgress.done()
+axios.interceptors.response.use(config =>{
+  NProgress.done()
   return config
 })
 Vue.prototype.$http = axios
