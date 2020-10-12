@@ -21,7 +21,7 @@
       <!-- 角色列表区域 -->
       <el-table :data="rolelist" border stripe>
         <!-- 展开列 -->
-        <el-table-column type="expand">
+        <el-table-column type="expand" >
           <template slot-scope="scope">
             <el-row :class="['bdbottom',li === 0 ? 'bdtop':'','vcenter']" v-for="(item1,li) in scope.row.children" :key="item1.id">
               <!-- 渲染一级权限 -->
@@ -39,7 +39,7 @@
                   </el-col>
                   <!-- 三级权限 -->
                   <el-col :span="18">
-                    <el-tag type="warning" v-for="(item3,li3) in item2.children" :key="item3.id" closable @close="removRightById(scope.row,item3.id)">{{item3.authName}}</el-tag>
+                    <el-tag type="warning" v-for="(item3) in item2.children" :key="item3.id" closable @close="removRightById(scope.row,item3.id)">{{item3.authName}}</el-tag>
                   </el-col>
                 </el-row>
               </el-col>
@@ -147,7 +147,8 @@ export default {
       // 修改角色数据
       editRoleForm:{
         roleName:'',
-        roleDesc:''
+        roleDesc:'',
+        roleEditId:''
       },
       // 控制分配权限对话框显示与隐藏
       setRightDialogVisible:false,
@@ -239,13 +240,13 @@ export default {
       }
       this.editRoleForm.roleName = res.data.roleName
       this.editRoleForm.roleDesc = res.data.roleDesc
-      this.editRoleForm.roleId = res.data.roleId
+      this.editRoleForm.roleEditId = res.data.roleId
       // console.log(this.editRoleForm);
     },
     // 修改角色提交
     editRoleInfo(){
       // console.log(this.editRoleForm.roleId);
-      let id = this.editRoleForm.roleId
+      let id = this.editRoleForm.roleEditId
 
       this.$refs.editRoleFormRef.validate(async (valid)=>{
         // console.log(valid);

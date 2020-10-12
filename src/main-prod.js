@@ -2,8 +2,8 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 // 导入elementUi      -------------外联cdn优化
-// import './plugins/element.js'   
-// import 'element-ui/lib/theme-chalk/index.css';     
+import './plugins/element.js'   
+import 'element-ui/lib/theme-chalk/index.css';     
 // 导入全局样式表
 import './assets/css/global.css'
 // 导入字体图片
@@ -25,7 +25,7 @@ import NProgress from 'nprogress'
 // import 'nprogress/nprogress.css'
 
 // 配置axios请求路径
-axios.defaults.baseURL = 'http://127.0.0.1:8888/api/private/v1/'
+axios.defaults.baseURL = 'http://chenxinlong.xyz:61235/api/private/v1/'
 // 在request拦截器中 显示进度条 ---NProgress    NProgress.start()
 // 设置拦截器 在请求头上设置token 
 axios.interceptors.request.use(config =>{
