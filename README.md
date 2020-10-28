@@ -1,19 +1,24 @@
-# Element后台管理系统(vue_shop)
-# 2020/10/7
-## 已完成登录模块 角色模块 权限模块 
-
-## 安装扩展包 
-```
-npm install
-```
-
-## 运行网站
-```
-npm run start
-```
-
-## 使用webpack打包
-```
-npm run build
-```
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="width: 100%;">
+  <div class="wk" style="width: 100%;display: flex;justify-content: center;">
+    <div class="nk_left">
+      <h1>项目效果图</h1>
+      <h1><a href="http://chenxinlong.xyz/vue_shop/#/login">线上查看</a></h1>
+      <img src="./public/效果图.gif" alt="">
+    </div>
+    <div class="nk_right">
+      <h1>项目使用须知</h1>
+      <h1>项目主要使用Vue+Element框架</h1>
+      <h1>此项目为PC端后台管理系统</h1>
+      <h1>使用时请先 npm install 安装扩展包</h1>
+      <h1>项目启动命令 npm run start</h1>
+      <h1>项目打包命令 npm run build</h1>
+    </div>
+  </div>
+</body>
+</html>
