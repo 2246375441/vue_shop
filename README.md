@@ -18,6 +18,9 @@
       <h1>使用时请先 npm install 安装扩展包</h1>
       <h1>项目启动命令 npm run start</h1>
       <h1>项目打包命令 npm run build</h1>
+      <h3>次项目有两个路口文件main.js(main-dev.js和main-prod.js)</h3>
+      <h3>开发时使用main-dev.js  使用本地的框架</h3>
+      <h3>打包时使用main-prod.js 将项目中框架等等不打包,使用外链cdn方式</h3>
     </div>
   </div>
 </body>
