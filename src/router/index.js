@@ -2,18 +2,18 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 
-const Login =() => import  ('../components/Login.vue')
-const Home =() => import  ('../components/Home.vue')
-const Welcome =() => import  ('../components/Welcome.vue')
-const Users =() => import  ('../components/user/Users.vue')
-const Rights =() => import  ('../components/power/Rights.vue')
-const Roles =() => import  ('../components/power/Roles.vue')
-const Cate =() => import  ('../components/goods/Cate.vue')
-const Params =() => import  ('../components/goods/Params.vue')
-const List =() => import  ('../components/goods/List.vue')
-const Add =() => import  ('../components/goods/Add.vue')
-const Order =() => import  ('../components/order/Order.vue')
-const Report =() => import  ('../components/report/Report.vue')
+const Login =() => import  ('../views/Login.vue')
+const Home =() => import  ('../views/Home.vue')
+const Welcome =() => import  ('../views/Welcome.vue')
+const Users =() => import  ('../views/user/Users.vue')
+const Rights =() => import  ('../views/power/Rights.vue')
+const Roles =() => import  ('../views/power/Roles.vue')
+const Cate =() => import  ('../views/goods/Cate.vue')
+const Params =() => import  ('../views/goods/Params.vue')
+const List =() => import  ('../views/goods/List.vue')
+const Add =() => import  ('../views/goods/Add.vue')
+const Order =() => import  ('../views/order/Order.vue')
+const Report =() => import  ('../views/report/Report.vue')
 
 
 
