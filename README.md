@@ -8,7 +8,7 @@
   <div class="wk" style="width: 100%;display: flex;justify-content: center;">
     <div class="nk_left">
       <h1>项目效果图</h1>
-      <h1><a href="http://chenxinlong.xyz/vue_shop/#/login">线上查看</a></h1>
+      <h1><a href="http://shop.chenxinlong.xyz/">线上查看</a></h1>
       <img src="./public/效果图.gif" alt="">
     </div>
     <div class="nk_right">
